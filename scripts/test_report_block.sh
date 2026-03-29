@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-API_KEY="AIzaSyCM3qGhFug2I2RW-VGLxk9IYnnQzNVxaMA"
+
 REPORT_URL="${1:-https://us-central1-soulmint-cfeb7.cloudfunctions.net/reportAndBlockUser}"
 REFRESH_URL="${2:-https://us-central1-soulmint-cfeb7.cloudfunctions.net/refreshMatchFeed}"
 MINT_URL="${3:-https://us-central1-soulmint-cfeb7.cloudfunctions.net/mintSoulboundProfile}"
