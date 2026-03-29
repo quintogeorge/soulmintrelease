@@ -1,0 +1,29 @@
+{
+  "name": "soulmint-functions",
+  "private": true,
+  "engines": {
+    "node": "22"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf lib",
+    "deploy": "firebase deploy --only functions",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "lint": "tsc --noEmit",
+    "test": "npm run build && node --test test/**/*.test.mjs"
+  },
+  "dependencies": {
+    "@google-cloud/vision": "^4.3.2",
+    "@metaplex-foundation/mpl-token-metadata": "3.4.0",
+    "@solana/spl-token": "0.4.13",
+    "@solana/web3.js": "1.95.8",
+    "firebase-admin": "^13.4.0",
+    "firebase-functions": "^6.0.1",
+    "pinata": "^2.5.0",
+    "utf-8-validate": "^5.0.10"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
